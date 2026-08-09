@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Loan Calculator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="header">
+
+    <h1>
+        🚗 Car Eligibility System
+    </h1>
+
+    <p>
+        Ella - Sales Advisor
+    </p>
+
+</div>
+
+<div class="container">
+
+    <!-- Panel Kiri -->
+    <div class="left-panel">
+
+        <h2>🚗 Semak Kelayakan</h2>
+
+        <label>Cari Model</label>
+
+        <input
+        type="text"
+        id="search"
+        placeholder="Contoh : Saga, Axia, Myvi..."
+>
+
+        <label>Gaji Bersih Sebulan (RM)</label>
+
+        <input
+            type="number"
+            id="salary"
+            placeholder="Contoh : 2500"
+        >
+
+        <div id="result">
+
+            <p class="info">
+                Masukkan gaji bersih untuk semak kelayakan.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- Panel Kanan -->
+    <div class="right-panel">
+
+        <h2>💰 Loan Calculator</h2>
+
+        <label>Model</label>
+
+        <select id="family">
+            <option>Pilih Model</option>
+        </select>
+
+
+        <label>Variant</label>
+
+        <select id="variant">
+            <option>Pilih Variant</option>
+        </select>
+
+
+        <label>Harga OTR (RM)</label>
+
+        <input
+            type="text"
+            id="price"
+            readonly
+        >
+
+
+        <label>Downpayment (RM)</label>
+
+        <input
+            type="number"
+            id="downpayment"
+            placeholder="0"
+        >
+
+
+        <label>Rebate (RM)</label>
+
+        <input
+            type="number"
+            id="rebate"
+            placeholder="0"
+        >
+
+
+        <div class="summary">
+
+            <div class="row">
+                <span>Interest</span>
+                <span id="interest">-</span>
+            </div>
+
+            <div class="row">
+
+                <span>Tempoh</span>
+
+                <select id="tenure">
+                    <option value="9">9 Tahun</option>
+                    <option value="8">8 Tahun</option>
+                    <option value="7">7 Tahun</option>
+                    <option value="6">6 Tahun</option>
+                    <option value="5">5 Tahun</option>
+                </select>
+
+            </div>
+
+            <div class="row">
+                <span>Loan Amount</span>
+                <span id="loanAmount">RM0</span>
+            </div>
+
+            <div class="row total">
+                <span>Monthly</span>
+                <span id="monthly">RM0</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+
+<label>No WhatsApp Customer</label>
+
+<input
+type="number"
+id="customerPhone"
+placeholder="60123456789"
+>
+
+
+<button id="whatsappBtn" disabled onclick="sendWhatsApp()">
+📲 Hantar Quotation
+</button>
+
+<button 
+onclick="resetCustomer()">
+
+🔄 Customer Baru
+
+</button>

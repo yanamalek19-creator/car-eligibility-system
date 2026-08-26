@@ -252,75 +252,56 @@ searchInput.addEventListener(
 
 // CHECK ELIGIBILITY
 function checkEligibility() {
-
     console.log("CHECK JALAN");
 
-    let salary =
-        Number(salaryInput.value) || 0;
+    let salary = Number(salaryInput.value) || 0;
+
+    let keyword = searchInput.value
+        .toLowerCase()
+        .trim();
+
+    // Kalau kedua-dua input kosong, kosongkan result
+    if (salary === 0 && keyword === "") {
+        resultBox.innerHTML = "";
+        return;
+    }
 
     let maxMonthly = null;
 
-
     if (salary > 0) {
-
-        maxMonthly =
-            salary * 0.30;
+        maxMonthly = salary * 0.30;
     }
-
 
     let html = "";
 
-    let keyword =
-        searchInput.value
-            .toLowerCase()
-            .trim();
-
-
     cars.forEach(car => {
-
         car.variants
-            .filter(
-                variant => variant.status === "Active"
-            )
+            .filter(variant => variant.status === "Active")
             .forEach(variant => {
 
                 if (variant.price > 0) {
 
-                    let loanAmount =
-                        Number(variant.price);
-
-                    let interest =
-                        Number(variant.interest) || 0;
-
-                    let year =
-                        Number(variant.loanYear) || 9;
-
+                    let loanAmount = Number(variant.price);
+                    let interest = Number(variant.interest) || 0;
+                    let year = Number(variant.loanYear) || 9;
 
                     let totalInterest =
                         loanAmount *
                         (interest / 100) *
                         year;
 
-
                     let monthly =
                         (loanAmount + totalInterest) /
                         (year * 12);
-
 
                     let salaryOK =
                         maxMonthly === null ||
                         monthly <= maxMonthly;
 
-
                     let searchOK =
                         keyword === "" ||
-                        car.family
-                            .toLowerCase()
-                            .includes(keyword) ||
-                        variant.name
-                            .toLowerCase()
-                            .includes(keyword);
-
+                        car.family.toLowerCase().includes(keyword) ||
+                        variant.name.toLowerCase().includes(keyword);
 
                     if (salaryOK && searchOK) {
 
@@ -352,16 +333,13 @@ function checkEligibility() {
             });
     });
 
-
     if (html === "") {
-
         html = `
             <p>
                 ❌ Tiada kereta dalam bajet ini.
             </p>
         `;
     }
-
 
     resultBox.innerHTML = html;
 }
@@ -530,10 +508,10 @@ Sales Advisor Proton`;
 
 
     let whatsapp =
-        "https://wa.me/" +
-        phone +
-        "?text=" +
-        encodeURIComponent(message);
+    "https://wa.me/" +
+    phone +
+    "?text=" +
+    encodeURIComponent(message);
 
 
     window.open(

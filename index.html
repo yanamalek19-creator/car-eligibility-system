@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Car Loan Calculator</title>
 
     <link rel="stylesheet" href="style.css">
@@ -12,162 +14,266 @@
 
     <div class="header">
 
-    <h1>
-        🚗 Car Eligibility System
-    </h1>
+        <h1>
+            🚗 Car Eligibility System
+        </h1>
 
-    <p>
-        Ella - Sales Advisor
-    </p>
-
-</div>
-
-<div class="container">
-
-    <!-- Panel Kiri -->
-    <div class="left-panel">
-
-        <h2>🚗 Semak Kelayakan</h2>
-
-        <label>Cari Model</label>
-
-        <input
-        type="text"
-        id="search"
-        placeholder="Contoh : Saga, Axia, Myvi..."
->
-
-        <label>Gaji Bersih Sebulan (RM)</label>
-
-        <input
-            type="number"
-            id="salary"
-            placeholder="Contoh : 2500"
-        >
-
-        <div id="result">
-
-            <p class="info">
-                Masukkan gaji bersih untuk semak kelayakan.
-            </p>
-
-        </div>
+        <p>
+            Ella - Sales Advisor
+        </p>
 
     </div>
 
 
-    <!-- Panel Kanan -->
-    <div class="right-panel">
+    <div class="container">
 
-        <h2>💰 Loan Calculator</h2>
+        <!-- PANEL KIRI -->
 
-        <label>Model</label>
+        <div class="left-panel">
 
-        <select id="family">
-            <option>Pilih Model</option>
-        </select>
+            <h2>
+                🚗 Semak Kelayakan
+            </h2>
 
+            <label>
+                Cari Model
+            </label>
 
-        <label>Variant</label>
-
-        <select id="variant">
-            <option>Pilih Variant</option>
-        </select>
-
-
-        <label>Harga OTR (RM)</label>
-
-        <input
-            type="text"
-            id="price"
-            readonly
-        >
+            <input
+                type="text"
+                id="search"
+                placeholder="Contoh : Saga, Axia, Myvi..."
+            >
 
 
-        <label>Downpayment</label>
+            <label>
+                Gaji Bersih Sebulan (RM)
+            </label>
 
-        <div class="downpayment-row">
+            <input
+                type="number"
+                id="salary"
+                placeholder="Contoh : 2500"
+            >
+
+
+            <div id="result">
+
+                <p class="info">
+                    Masukkan gaji bersih untuk semak kelayakan.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- PANEL KANAN -->
+
+        <div class="right-panel">
+
+            <h2>
+                💰 Loan Calculator
+            </h2>
+
+
+            <label>
+                Model
+            </label>
+
+            <select id="family">
+
+                <option value="">
+                    Pilih Model
+                </option>
+
+            </select>
+
+
+            <label>
+                Variant
+            </label>
+
+            <select id="variant">
+
+                <option value="">
+                    Pilih Variant
+                </option>
+
+            </select>
+
+
+            <label>
+                Harga OTR (RM)
+            </label>
+
+            <input
+                type="text"
+                id="price"
+                readonly
+            >
+
+
+            <!-- DOWNPAYMENT -->
+
+            <div class="downpayment-label">
+
+                <label>
+                    Downpayment
+                </label>
+
+                <select id="downpaymentType">
+
+                    <option value="rm">
+                        RM
+                    </option>
+
+                    <option value="percent">
+                        %
+                    </option>
+
+                </select>
+
+            </div>
+
 
             <input
                 type="number"
                 id="downpayment"
                 placeholder="Masukkan Downpayment"
                 min="0"
-    >
-
-            <select id="downpaymentType">
-                <option value="rm">RM</option>
-                <option value="percent">%</option>
-            </select>
-
-         </div>
+            >
 
 
-        <label>Rebate (RM)</label>
+            <!-- REBATE -->
 
-        <input
-            type="number"
-            id="rebate"
-            placeholder="0"
-        >
+            <label>
+                Rebate (RM)
+            </label>
+
+            <input
+                type="number"
+                id="rebate"
+                placeholder="0"
+            >
 
 
-        <div class="summary">
+            <!-- SUMMARY -->
 
-            <div class="row">
-                <span>Interest</span>
-                <span id="interest">-</span>
+            <div class="summary">
+
+                <div class="row">
+
+                    <span>
+                        Interest
+                    </span>
+
+                    <span id="interest">
+                        -
+                    </span>
+
+                </div>
+
+
+                <div class="row">
+
+                    <span>
+                        Tempoh
+                    </span>
+
+                    <select id="tenure">
+
+                        <option value="9">
+                            9 Tahun
+                        </option>
+
+                        <option value="8">
+                            8 Tahun
+                        </option>
+
+                        <option value="7">
+                            7 Tahun
+                        </option>
+
+                        <option value="6">
+                            6 Tahun
+                        </option>
+
+                        <option value="5">
+                            5 Tahun
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="row">
+
+                    <span>
+                        Loan Amount
+                    </span>
+
+                    <span id="loanAmount">
+                        RM0.00
+                    </span>
+
+                </div>
+
+
+                <div class="row total">
+
+                    <span>
+                        Monthly
+                    </span>
+
+                    <span id="monthly">
+                        RM0.00
+                    </span>
+
+                </div>
+
             </div>
 
-            <div class="row">
 
-                <span>Tempoh</span>
+            <!-- WHATSAPP -->
 
-                <select id="tenure">
-                    <option value="9">9 Tahun</option>
-                    <option value="8">8 Tahun</option>
-                    <option value="7">7 Tahun</option>
-                    <option value="6">6 Tahun</option>
-                    <option value="5">5 Tahun</option>
-                </select>
+            <label>
+                No WhatsApp Customer
+            </label>
 
-            </div>
+            <input
+                type="number"
+                id="customerPhone"
+                placeholder="60123456789"
+            >
 
-            <div class="row">
-                <span>Loan Amount</span>
-                <span id="loanAmount">RM0</span>
-            </div>
 
-            <div class="row total">
-                <span>Monthly</span>
-                <span id="monthly">RM0</span>
-            </div>
+            <button
+                id="whatsappBtn"
+                disabled
+                onclick="sendWhatsApp()"
+            >
+                📲 Hantar Quotation
+            </button>
+
+
+            <button
+                onclick="resetCustomer()"
+            >
+                🔄 Customer Baru
+            </button>
 
         </div>
 
     </div>
 
-</div>
 
-<script src="script.js"></script>
+    <script src="script.js"></script>
 
 </body>
+
 </html>
-
-<label>No WhatsApp Customer</label>
-
-<input
-type="number"
-id="customerPhone"
-placeholder="60123456789"
->
-
-
-<button id="whatsappBtn" disabled onclick="sendWhatsApp()">
-📲 Hantar Quotation
-</button>
-
-<button 
 onclick="resetCustomer()">
 
 🔄 Customer Baru

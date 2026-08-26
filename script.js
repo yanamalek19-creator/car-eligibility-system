@@ -298,10 +298,13 @@ function checkEligibility() {
                         maxMonthly === null ||
                         monthly <= maxMonthly;
 
-                    let searchOK =
-                        keyword === "" ||
-                        car.family.toLowerCase().includes(keyword) ||
-                        variant.name.toLowerCase().includes(keyword);
+                    let searchOK = true;
+
+                    if (keyword !== "") {
+                    searchOK = car.family
+                        .toLowerCase()
+                        .startsWith(keyword);
+                    }
 
                     if (salaryOK && searchOK) {
 

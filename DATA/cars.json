@@ -1,0 +1,497 @@
+[
+  {
+    "brand": "Proton",
+    "family": "Saga",
+    "variants": [
+      {
+        "name": "Standard",
+        "price": 40581.6,
+        "interest": 3.0,
+        "loanYear": 9,
+        "minSalary": 1700,
+        "status": "Active"
+      },
+      {
+        "name": "Executive",
+        "price": 46760.19,
+        "interest": 3.0,
+        "loanYear": 9,
+        "minSalary": 1800,
+        "status": "Active"
+      },
+      {
+        "name": "Premium",
+        "price": 51909.01,
+        "interest": 3.0,
+        "loanYear": 9,
+        "minSalary": 1900,
+        "status": "Active"
+      }
+    ]
+  },
+
+  {
+    "brand": "Proton",
+    "family": "Persona",
+    "variants": [
+      {
+        "name": "Standard",
+        "price": 49659.49,
+        "interest": 3.0,
+        "loanYear": 9,
+        "minSalary": 2000,
+        "status": "Active"
+      },
+      {
+        "name": "Executive",
+        "price": 55323.19,
+        "interest": 3.0,
+        "loanYear": 9,
+        "minSalary": 2300,
+        "status": "Active"
+      },
+      {
+        "name": "Premium",
+        "price": 60472.01,
+        "interest": 3.0,
+        "loanYear": 9,
+        "minSalary": 2300,
+        "status": "Active"
+      }
+    ]
+  },
+
+  {
+    "brand": "Proton",
+    "family": "S70",
+    "variants": [
+      {
+        "name": "Executive",
+        "price": 76422.37,
+        "interest": 2.5,
+        "loanYear": 9,
+        "minSalary": 2300,
+        "status": "Active"
+      },
+      {
+        "name": "Premium",
+        "price": 82611.96,
+        "interest": 2.5,
+        "loanYear": 9,
+        "minSalary": 2400,
+        "status": "Active"
+      },
+      {
+        "name": "Flagship",
+        "price": 92909.61,
+        "interest": 2.5,
+        "loanYear": 9,
+        "minSalary": 2600,
+        "status": "Active"
+      },
+      {
+        "name": "Flagship X",
+        "price": 98058.43,
+        "interest": 2.5,
+        "loanYear": 9,
+        "minSalary": 2800,
+        "status": "Active"
+      }
+    ]
+  },
+
+  {
+    "brand": "Proton",
+    "family": "X50",
+    "variants": [
+      {
+        "name": "Executive",
+        "price": 92909.61,
+        "interest": 2.4,
+        "loanYear": 9,
+        "minSalary": 2500,
+        "status": "Active"
+      },
+      {
+        "name": "Premium",
+        "price": 105266.78,
+        "interest": 2.4,
+        "loanYear": 9,
+        "minSalary": 2600,
+        "status": "Active"
+      },
+      {
+        "name": "Flagship",
+        "price": 117009.07,
+        "interest": 2.4,
+        "loanYear": 9,
+        "minSalary": 2800,
+        "status": "Active"
+      }
+    ]
+  },
+
+  {
+    "brand": "Proton",
+    "family": "X70",
+    "variants": [
+      {
+        "name": "Executive",
+        "price": 110415.61,
+        "interest": 2.4,
+        "loanYear": 9,
+        "minSalary": 3500,
+        "status": "Active"
+      },
+      {
+        "name": "Premium",
+        "price": 123802.55,
+        "interest": 2.4,
+        "loanYear": 9,
+        "minSalary": 3800,
+        "status": "Active"
+      }
+    ]
+  },
+
+  {
+    "brand": "Proton",
+    "family": "X90",
+    "variants": [
+      {
+        "name": "Lite",
+        "price": 110531.6,
+        "interest": 2.4,
+        "loanYear": 9,
+        "minSalary": 3500,
+        "status": "Active"
+      },
+      {
+        "name": "Prime",
+        "price": 120829.25,
+        "interest": 2.4,
+        "loanYear": 9,
+        "minSalary": 2800,
+        "status": "Active"
+      },
+      {
+        "name": "Prime X",
+        "price": 127007.85,
+        "interest": 2.4,
+        "loanYear": 9,
+        "minSalary": 4000,
+        "status": "Active"
+      }
+    ]
+  },
+  {
+  "brand": "Proton",
+  "family": "e.MAS 5",
+  "variants": [
+    {
+      "name": "Prime",
+      "price": 61930,
+      "interest": 2.6,
+      "loanYear": 9,
+      "minSalary": 2700,
+      "status": "Active"
+    },
+    {
+      "name": "Premium",
+      "price": 75786,
+      "interest": 2.6,
+      "loanYear": 9,
+      "minSalary": 3200,
+      "status": "Active"
+    }
+  ]
+},
+{
+  "brand": "Proton",
+  "family": "e.MAS 7",
+  "variants": [
+    {
+      "name": "Prime",
+      "price": 107910,
+      "interest": 2.4,
+      "loanYear": 9,
+      "minSalary": 3000,
+      "status": "Active"
+    },
+    {
+      "name": "Premium",
+      "price": 124100,
+      "interest": 2.4,
+      "loanYear": 9,
+      "minSalary": 3400,
+      "status": "Active"
+    },
+    {
+      "name": "PHEV Prime",
+      "price": 114000,
+      "interest": 2.4,
+      "loanYear": 9,
+      "minSalary": 3600,
+      "status": "Active"
+    },
+    {
+      "name": "PHEV Premium",
+      "price": 128100,
+      "interest": 2.4,
+      "loanYear": 9,
+      "minSalary": 4000,
+      "status": "Active"
+    },
+    {
+      "name": "PHEV Premium Plus",
+      "price": 134300,
+      "interest": 2.4,
+      "loanYear": 9,
+      "minSalary": 4400,
+      "status": "Active"
+    }
+  ]
+},
+{
+  "brand": "Perodua",
+  "family": "Axia",
+  "variants": [
+    {
+      "name": "G",
+      "price": 35000,
+      "interest": 2.8,
+      "loanYear": 9,
+      "minSalary": 1700,
+      "status": "Active"
+    },
+    {
+      "name": "X",
+      "price": 39875.07,
+      "interest": 2.8,
+      "loanYear": 9,
+      "minSalary": 1700,
+      "status": "Active"
+    },
+    {
+      "name": "SE",
+      "price": 44485.31,
+      "interest": 2.8,
+      "loanYear": 9,
+      "minSalary": 1700,
+      "status": "Active"
+    },
+    {
+      "name": "AV",
+      "price": 50632.11,
+      "interest": 2.8,
+      "loanYear": 9,
+      "minSalary": 1700,
+      "status": "Active"
+    }
+  ]
+},
+{
+  "brand": "Perodua",
+  "family": "Bezza",
+  "variants": [
+    {
+      "name": "G",
+      "price": 37924.83,
+      "interest": 2.8,
+      "loanYear": 9,
+      "minSalary": 1700,
+      "status": "Active"
+    },
+    {
+      "name": "X",
+      "price": 45454.31,
+      "interest": 2.8,
+      "loanYear": 9,
+      "minSalary": 1800,
+      "status": "Active"
+    },
+    {
+      "name": "AV",
+      "price": 51710.61,
+      "interest": 2.8,
+      "loanYear": 9,
+      "minSalary": 1800,
+      "status": "Active"
+    }
+  ]
+},
+{
+  "brand": "Perodua",
+  "family": "Myvi",
+  "variants": [
+    {
+      "name": "G (Tanpa ASA)",
+      "price": 48074.03,
+      "interest": 2.8,
+      "loanYear": 9,
+      "minSalary": 1900,
+      "status": "Active"
+    },
+    {
+      "name": "G (Dengan ASA)",
+      "price": 50129.15,
+      "interest": 2.8,
+      "loanYear": 9,
+      "minSalary": 2000,
+      "status": "Active"
+    },
+    {
+      "name": "X",
+      "price": 52611.83,
+      "interest": 2.8,
+      "loanYear": 9,
+      "minSalary": 2000,
+      "status": "Active"
+    },
+    {
+      "name": "H",
+      "price": 56722.07,
+      "interest": 2.8,
+      "loanYear": 9,
+      "minSalary": 2000,
+      "status": "Active"
+    },
+    {
+      "name": "AV",
+      "price": 61859.87,
+      "interest": 2.8,
+      "loanYear": 9,
+      "minSalary": 2100,
+      "status": "Active"
+    }
+  ]
+},
+{
+  "brand": "Perodua",
+  "family": "Ativa",
+  "variants": [
+    {
+      "name": "X Metallic",
+      "price": 64514.99,
+      "interest": 2.3,
+      "loanYear": 9,
+      "minSalary": 2100,
+      "status": "Active"
+    },
+    {
+      "name": "H Metallic",
+      "price": 69452.79,
+      "interest": 2.3,
+      "loanYear": 9,
+      "minSalary": 2100,
+      "status": "Active"
+    },
+    {
+      "name": "H Special Metallic",
+      "price": 69980.35,
+      "interest": 2.3,
+      "loanYear": 9,
+      "minSalary": 2100,
+      "status": "Active"
+    },
+    {
+      "name": "AV Metallic",
+      "price": 74890.59,
+      "interest": 2.3,
+      "loanYear": 9,
+      "minSalary": 2100,
+      "status": "Active"
+    },
+    {
+      "name": "AV Special Metallic",
+      "price": 75418.15,
+      "interest": 2.3,
+      "loanYear": 9,
+      "minSalary": 2100,
+      "status": "Active"
+    },
+    {
+      "name": "AV 2-Tone",
+      "price": 75718.15,
+      "interest": 2.3,
+      "loanYear": 9,
+      "minSalary": 2100,
+      "status": "Active"
+    }
+  ]
+},
+{
+  "brand": "Perodua",
+  "family": "Aruz",
+  "variants": [
+    {
+      "name": "X",
+      "price": 75218.15,
+      "interest": 2.3,
+      "loanYear": 9,
+      "minSalary": 2100,
+      "status": "Active"
+    },
+    {
+      "name": "AV",
+      "price": 80355.95,
+      "interest": 2.3,
+      "loanYear": 9,
+      "minSalary": 2100,
+      "status": "Active"
+    }
+  ]
+},
+{
+  "brand": "Perodua",
+  "family": "Traz",
+  "variants": [
+    {
+      "name": "X",
+      "price": 78409,
+      "interest": 2.3,
+      "loanYear": 9,
+      "minSalary": 2200,
+      "status": "Active"
+    },
+    {
+      "name": "H",
+      "price": 84491,
+      "interest": 2.3,
+      "loanYear": 9,
+      "minSalary": 2300,
+      "status": "Active"
+    }
+  ]
+},
+{
+  "brand": "Perodua",
+  "family": "Alza",
+  "variants": [
+    {
+      "name": "X",
+      "price": 64528.77,
+      "interest": 2.3,
+      "loanYear": 9,
+      "minSalary": 2100,
+      "status": "Active"
+    },
+    {
+      "name": "H",
+      "price": 70180.35,
+      "interest": 2.3,
+      "loanYear": 9,
+      "minSalary": 2200,
+      "status": "Active"
+    },
+    {
+      "name": "AV",
+      "price": 77887.05,
+      "interest": 2.3,
+      "loanYear": 9,
+      "minSalary": 2300,
+      "status": "Active"
+    }
+  ]
+}
+]

@@ -84,17 +84,23 @@
         >
 
 
-        <label>Downpayment (RM)</label>
+        <label>Downpayment</label>
 
-        <div style="background:red !important; color:white !important; padding:20px !important; font-size:30px !important;">
-    TEST RM PERCENT
-</div>
+        <div class="downpayment-row">
 
-        <input
-            type="number"
-            id="downpayment"
-            placeholder="0"
-        >
+            <input
+                type="number"
+                id="downpayment"
+                placeholder="Masukkan Downpayment"
+                min="0"
+    >
+
+            <select id="downpaymentType">
+                <option value="rm">RM</option>
+                <option value="percent">%</option>
+            </select>
+
+         </div>
 
 
         <label>Rebate (RM)</label>

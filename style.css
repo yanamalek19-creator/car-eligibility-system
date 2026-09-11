@@ -198,3 +198,17 @@ button:disabled {
     margin: 0 !important;
     height: 32px;
 }
+/* ================================
+   STEP 32.2
+   MONTHLY PAYMENT - BESAR & JELAS
+================================ */
+
+#monthly {
+    font-size: 32px;
+    font-weight: 800;
+    text-align: center;
+    padding: 18px 15px;
+    margin-top: 10px;
+    border-radius: 12px;
+    letter-spacing: 0.5px;
+}

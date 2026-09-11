@@ -266,11 +266,7 @@ function checkEligibility() {
         return;
     }
 
-    let maxMonthly = null;
-
-    if (salary > 0) {
-        maxMonthly = salary * 0.30;
-    }
+    let minimumBalance = 1300;
 
     let html = "";
 
@@ -294,9 +290,11 @@ function checkEligibility() {
                         (loanAmount + totalInterest) /
                         (year * 12);
 
+                    let balance = salary - monthly;
+
                     let salaryOK =
-                        maxMonthly === null ||
-                        monthly <= maxMonthly;
+                        salary === 0 ||
+                        balance >= minimumBalance;
 
                     let searchOK = true;
 

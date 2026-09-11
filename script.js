@@ -317,17 +317,21 @@ function checkEligibility() {
                                     ${variant.name}
                                 </p>
 
-                                <p class="monthly">
-                                    💰 RM${monthly.toFixed(0)} / bulan
-                                </p>
+                               <p class="monthly">
+                                   💰 RM${monthly.toFixed(0)} / bulan
+                               </p>
 
-                                <button
-                                    onclick="selectCar('${car.family}', '${variant.name}')"
-                                >
-                                    Pilih Kereta
-                                </button>
+                               <p>
+                                   ✅ <strong>LAYAK</strong>
+                               </p>
 
-                            </div>
+                               <button
+                                   onclick="selectCar('${car.family}', '${variant.name}')"
+                               >
+                                   Pilih Kereta
+                               </button>
+
+                           </div>
                         `;
                     }
                 }
@@ -472,43 +476,44 @@ function sendWhatsApp() {
 
 
     // WHATSAPP MESSAGE
-    let message = `Salam Tuan/Puan 😊
+    let message =
+    "Salam Tuan/Puan\n\n" +
 
-Seperti perbincangan tadi, saya sediakan anggaran quotation untuk Tuan/Puan:
+    "Seperti perbincangan tadi, saya sediakan anggaran quotation untuk Tuan/Puan:\n\n" +
 
-🚗 Model:
-${model}
+    "Model:\n" +
+    model + "\n\n" +
 
-🚘 Variant:
-${variant}
+    "Variant:\n" +
+    variant + "\n\n" +
 
-💰 Harga OTR:
-${price}
+    "Harga OTR:\n" +
+    price + "\n\n" +
 
-💳 Downpayment:
-${downpaymentDisplay}
+    "Downpayment:\n" +
+    downpaymentDisplay + "\n\n" +
 
-🎁 Rebate:
-${rebate}
+    "Rebate:\n" +
+    rebate + "\n\n" +
 
-📆 Tempoh:
-${tenure} Tahun
+    "Tempoh:\n" +
+    tenure + " Tahun\n\n" +
 
-💵 Anggaran Bulanan:
-${monthly}
+    "Anggaran Bulanan:\n" +
+    monthly + "\n\n" +
 
-Saya boleh bantu semak kelayakan dan proses permohonan seterusnya.
+    "Saya boleh bantu semak kelayakan dan proses permohonan seterusnya.\n\n" +
 
-Jika ada apa-apa pertanyaan boleh terus reply WhatsApp ini ya.
+    "Jika ada apa-apa pertanyaan boleh terus reply WhatsApp ini ya.\n\n" +
 
-Terima kasih 😊
+    "Terima kasih\n\n" +
 
-Ella
+    "Ella\n\n" +
 
-Sales Advisor Proton`;
+    "Sales Advisor Proton";
 
 
-    let whatsapp =
+let whatsapp =
     "https://wa.me/" +
     phone +
     "?text=" +
